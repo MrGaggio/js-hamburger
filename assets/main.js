@@ -36,4 +36,8 @@ hamburgerDiv.className = "hamburgerNew";
 hamburgerDiv.className = hamburgerDiv.classList + ' hamburgerNew';
 console.log(hamburgerNew);
 
+/*quando clicco sul div haburger far apparire l'hamburger */
+document.getElementsByClassName("hamburgerDiv").addEventListener("click", function () {
+    document.getElementsByClassName("").innerHTML = "";
+});
 
