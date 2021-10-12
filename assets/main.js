@@ -20,7 +20,7 @@
 
 
 
-/* Selezionare il div h amburger*/
+/* Selezionare il div hamburger*/
 
 let hamburgerDiv = document.getElementsByClassName("hamburger-menu");
 console.log(document.getElementsByClassName("hamburger-menu"));
@@ -32,6 +32,8 @@ console.log(document.getElementsByClassName("fas fa-bars"));
 
 /* -aggiungere una classe all'hamburger icona */
 
-
+hamburgerDiv.className = "hamburgerNew";
+hamburgerDiv.className = hamburgerDiv.classList + ' hamburgerNew';
+console.log(hamburgerNew);
 
 
