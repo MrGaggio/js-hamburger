@@ -26,7 +26,6 @@ const closeIcon = document.querySelector(" .close");
 console.log(hamburgerMenuElement, hamburgerIcon);
 
 /* cliccare all'interno del div hamburger */
-
 hamburgerIcon.addEventListener('click', function (){
     console.log("clicca"); //errore che non riesco a risolvere ho anche provato a copiare pari pari la stringa di codice da w3shool
     hamburgerMenuElement.style.display = 'block'
