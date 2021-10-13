@@ -6,7 +6,7 @@
 
 -selezionare l'icona hamburger
 
--aggiungere una classe all'hamburger icona
+
 
 -quando clicco sull'icona far sparire l'hamburger e mostrare il contenuto del menu (menu hamburger display-none)
 
@@ -29,14 +29,10 @@ console.log(document.getElementsByClassName("hamburger-menu"));
 let hamburgerIcon = document.getElementsByClassName("fas fa-bars")
 console.log(document.getElementsByClassName("fas fa-bars"));
 
-/* -aggiungere una classe all'hamburger icona */
 
-hamburgerDiv.className = "hamburgerNew";
-hamburgerDiv.className = hamburgerDiv.classList + ' hamburgerNew';
-console.log(hamburgerNew);
 
 /*quando clicco sull'icona dell'hamburger modificare la proprieta display del div hamburger */
-document.getElementsByClassName("hamburgerDiv").addEventListener("click", function () {
-    document.getElementsByClassName("hamburger-menu.active").innerHTML = "";
+document.getElementsByClassName(hamburgerIcon).addEventListener("click", function () {
+    document.getElementsByClassName("hamburger-menu.active").style.display = "block"
 });
 
