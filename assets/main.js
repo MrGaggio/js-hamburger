@@ -21,7 +21,7 @@
 /* Selezionare il div hamburger*/
 
 const hamburgerMenuElement = document.querySelector(" .hamburger-menu");
-const hamburgerIcon = document.querySelector(" .fas fa-bars");
+const hamburgerIcon = document.querySelector(" .fas.fa-bars");
 const closeIcon = document.querySelector(" .close");
 console.log(hamburgerMenuElement, hamburgerIcon);
 
