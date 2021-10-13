@@ -2,16 +2,15 @@
 
 /*
 
--selezionare l'icona hamburger
-
 -selezionare div hamburger
 
+-selezionare l'icona hamburger
 
 -aggiungere una classe all'hamburger icona
 
--quando clicco sull'icona far sparire l'hamburger
+-quando clicco sull'icona far sparire l'hamburger e mostrare il contenuto del menu (menu hamburger display-none)
 
--quando clicco sul div haburger far apparire l'hambur
+-quando clicco sulla X chiudere il menu per far riapparire il menu hamburger
 */
 
 
@@ -38,6 +37,6 @@ console.log(hamburgerNew);
 
 /*quando clicco sul div haburger far apparire l'hamburger */
 document.getElementsByClassName("hamburgerDiv").addEventListener("click", function () {
-    document.getElementsByClassName("").innerHTML = "";
+    document.getElementsByClassName("hamburger-menu.active").innerHTML = "";
 });
 
