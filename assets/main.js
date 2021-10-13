@@ -4,7 +4,6 @@
 
 -selezionare div hamburger
 
--selezionare l'icona hamburger
 
 
 
@@ -21,18 +20,20 @@
 
 /* Selezionare il div hamburger*/
 
-let hamburgerDiv = document.getElementsByClassName("hamburger-menu");
-console.log(document.getElementsByClassName("hamburger-menu"));
+const hamburgerMenuElement = document.querySelector(" .hamburger-menu");
+const hamburgerIcon = document.querySelector(" .fas fa-bars");
+const closeIcon = document.querySelector(" .close");
+console.log(hamburgerMenuElement, hamburgerIcon);
 
-/* -selezionare l'icona hamburger */
+/* cliccare all'interno del div hamburger */
 
-let hamburgerIcon = document.getElementsByClassName("fas fa-bars")
-console.log(document.getElementsByClassName("fas fa-bars"));
+hamburgerIcon.addEventListener('click', function (){
+    console.log("clicca"); //errore che non riesco a risolvere ho anche provato a copiare pari pari la stringa di codice da w3shool
+    hamburgerMenuElement.style.display = 'block'
+})
+    
+//quando il menu è aperto cliccare sulla x per chiuderlo
 
-
-
-/*quando clicco sull'icona dell'hamburger modificare la proprieta display del div hamburger */
-document.getElementsByClassName(hamburgerIcon).addEventListener("click", function () {
-    document.getElementsByClassName("hamburger-menu.active").style.display = "block"
-});
-
+closeIcon.addEventListener('click', function (){
+    hamburgerMenuElement.style.display = 'none'
+})
